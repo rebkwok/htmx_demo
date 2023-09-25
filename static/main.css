@@ -1,0 +1,25 @@
+
+.main {
+    margin: auto;
+    padding-left: 25%;
+}
+
+.circle {
+width: 50px;
+height: 50px;
+-webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+border-radius: 25px;
+border-color: lightslategray;
+}
+
+
+.btn {
+    background-color: darkgray;
+    color: black;
+    border-radius: 5px;
+    border-color: darkgray;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: sans-serif;
+}

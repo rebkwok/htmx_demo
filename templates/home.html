@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="main">
+        <h1>An htmx demo</h1>
+        
+        {% include 'partials/dot.html' %}
+
+        <button
+            class="btn"
+            hx-get="/partials/change-colour"
+            hx-target="#dot"
+        >Change colour</button>
+    </div>
+  </body>
+
+
+
+  <script src="https://unpkg.com/htmx.org@1.9.2" integrity="sha384-L6OqL9pRWyyFU3+/bjdSri+iIphTN/bvYyM37tICVyOJkWZLpP2vGn6VUEXgzg6h" crossorigin="anonymous" defer></script>
+</html>
